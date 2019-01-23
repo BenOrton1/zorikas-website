@@ -4,6 +4,30 @@ body {
 
 .header-image {
     background: url("images/HOME_Header_Image.jpg");
+}
+
+.hire-header {
+    background: url("images/Hire/00 HIRE Header Image.jpg");
+}
+
+.about-header {
+    background: url("images/about/00 ABOUT Header Image.jpg");
+}
+
+.hire-header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #000000, #000000);
+    opacity: .2;
+}
+
+.header-image,
+.hire-header,
+.about-header {
     background-color: #cccccc;
     width: 100vw;
     height: auto;
@@ -11,16 +35,28 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    background-color: #e7e7db;
+}
+
+.white-text {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
 }
 
 .white-text h2 {
     text-align: right;
-    font-size: 12px;
+    font-size: 1em;
     position: relative;
     top: 50%;
     left: 90%;
     transform: translate(-50%, -50%);
-    color: white;
 }
 
 .header-hire {
@@ -38,28 +74,37 @@ body {
 }
 
 
+
 @media(min-width:992px) {
     .white-text {
         left: 30%;
     }
 
-    .header-image {
+    .header-image,
+    .hire-header {
         width: 100vw;
         height: 600px;
         background-attachment: fixed;
         background-position: top;
         background-repeat: no-repeat;
         background-size: 100%;
-
     }
+    .about-header {
+        width: 100vw;
+        height: 300px;
+        background-attachment: fixed;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
     .white-text h2 {
         text-align: right;
-        font-size: 2em;
+        font-size: 1.5em;
         position: relative;
         top: 100px;
         left: 0;
         transform: translate(-50%, -50%);
-        color: white;
     }
 
 }
@@ -120,7 +165,9 @@ body {
     background-clip: content-box;
 }
 
-
+.center-text {
+    text-align: center;
+}
 
 figure-caption {
     position: absolute;
@@ -134,10 +181,15 @@ figure-caption {
 .hire-me-text {
     position: absolute;
     text-align: left;
+    font-size: 2.5em;
     top: 20%;
     left: 2em;
     width: 60%;
     color: #fafafa;
+}
+
+.hire-me-text h3 {
+    font-size: 1em;
 }
 
 figure-caption p {
@@ -206,4 +258,33 @@ figure-caption {
 .footer-text {
     text-align: center;
     color: #c5956a
+}
+
+/*------------about image*/
+
+.portrate {
+    background: url("/assets/images/about/00 ABOUT Portrait.jpg");
+    height: 100%;
+    width: auto;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.portrate:hover {
+    background: url("/assets/images/about/00 ABOUT Foto.jpg");
+    width: auto;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+@media(min-width:992px) {
+    .portrate {
+        min-height: 450px;
+    }
 }
