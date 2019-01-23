@@ -132,7 +132,7 @@ a:hover {
 
 .social-link {
     opacity: 0.7;
-
+    width: 30px;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -217,8 +217,13 @@ figure-caption {
 }
 
 .hire-me-text h3 {
-    font-size: 200%;
+    font-size: 150%;
     font-weight: 700;
+}
+@media(min-width:1200px) {
+  .hire-me-text h3 {
+    font-size: 200%;
+}
 }
 
 
