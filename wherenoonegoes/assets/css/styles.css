@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Coming+Soon');
+
+body {
+
+    background-image: linear-gradient(to bottom, #fccbb2, #fff);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Coming Soon', cursive, "sans-serif";
+}
+
+.wng-image {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+}
+
+
+h2{
+    text-align:center;
+}
+p{
+    padding:5px 15px 15px 15px;
+}
+/*-----header------*/
+
+/*-------comics------*/
+
+a {
+    color: #000000;
+    text-decoration: underline;
+    transition: ease-in-out;
+    -webkit-transition: ease-in-out;
+    -moz-transition: ease-in-out;
+    -o-transition: ease-in-out;
+    transition-duration: 0.3s;
+
+}
+
+a:hover {
+    color: #ff0000ba;
+    text-decoration: none;
+    transition: ease-in-out;
+    -webkit-transition: ease-in-out;
+    -moz-transition: ease-in-out;
+    -o-transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+nav a{
+    text-decoration:none;
+}
+
+/*-------navbar----------*/
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+nav ul li {
+
+    display: inline-flex;
+
+}
+
+/*-------footer----------*/
+
+.footer-text {
+    margin: 30px 0;
+    text-align: center;
+}
+
+/*-------about me-------*/
+
+.about-me-text {
+    text-align: center;
+}
+
+/*-------support-------*/
+
+
+.social-media{
+    margin-top:30px;
+}
+
+nav ul li img {
+    height: 1em;
+    transition: ease-in-out;
+    -webkit-transition: ease-in-out;
+    -moz-transition: ease-in-out;
+    -o-transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+nav ul li img:hover {
+
+    opacity: 0.5;
+    transition: ease-in-out;
+    -webkit-transition: ease-in-out;
+    -moz-transition: ease-in-out;
+    -o-transition: ease-in-out;
+    transition-duration: 0.3s;
+}
