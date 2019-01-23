@@ -9,19 +9,27 @@ body {
 }
 
 .wng-image {
-    width: 100%;
+    min-width: 100%;
     height: auto;
     margin: 15px 0;
 }
 
 
-h2{
-    text-align:center;
+h2 {
+    text-align: center;
 }
-p{
-    padding:5px 15px 15px 15px;
+
+p {
+    padding: 5px 15px 15px 15px;
 }
+
 /*-----header------*/
+
+.header-image {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+}
 
 /*-------comics------*/
 
@@ -45,8 +53,9 @@ a:hover {
     -o-transition: ease-in-out;
     transition-duration: 0.3s;
 }
-nav a{
-    text-decoration:none;
+
+nav a {
+    text-decoration: none;
 }
 
 /*-------navbar----------*/
@@ -78,9 +87,8 @@ nav ul li {
 
 /*-------support-------*/
 
-
-.social-media{
-    margin-top:30px;
+.social-media {
+    margin-top: 30px;
 }
 
 nav ul li img {
