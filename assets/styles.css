@@ -1,5 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
 body {
     background-color: rgb(231, 231, 219);
+    font-family: 'Nunito', sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.uppercase {
+    text-transform: uppercase;
 }
 
 .header-image {
@@ -14,16 +25,6 @@ body {
     background: url("images/about/00 ABOUT Header Image.jpg");
 }
 
-.hire-header:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: linear-gradient(to bottom right, #000000, #000000);
-    opacity: .2;
-}
 
 .header-image,
 .hire-header,
@@ -60,19 +61,33 @@ body {
 }
 
 .header-hire {
-    text-decoration: underline;
-    color: white
+    font-weight: 700;
+    color: white;
 }
 
 .header-hire:hover {
     opacity: 0.5;
     color: #fafafa;
+    text-decoration: none;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
 }
 
+.terms-conditions {
+    color: #000000;
+    font-weight: 700;
+}
+
+.terms-conditions:hover {
+    color: #838d83;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
 
 
 @media(min-width:992px) {
@@ -109,12 +124,23 @@ body {
 
 }
 
+@media(min-width:1200px) {
+    .white-text {
+        top: 15vh;
+    }
+}
+
 .social-link {
     opacity: 0.7;
+
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
+}
+
+.social-link img {
+    width: 2em;
 }
 
 .social-link:hover {
@@ -138,13 +164,14 @@ body {
 
 .hire-me-background {
     background-color: #aebcaf;
-    height: 27vw;
+    height: auto;
     width: 90vw;
 
 }
 
 .hire-me-background:hover {
     background-color: #79827a;
+    text-decoration: none;
 }
 
 .padding-box {
@@ -179,18 +206,21 @@ figure-caption {
 }
 
 .hire-me-text {
-    position: absolute;
+    position: relative;
     text-align: left;
-    font-size: 2.5em;
-    top: 20%;
-    left: 2em;
+    font-size: 1.5em;
+    top: 10%;
+    left: 1.5em;
     width: 60%;
     color: #fafafa;
+    font-weight: 700;
 }
 
 .hire-me-text h3 {
-    font-size: 1em;
+    font-size: 200%;
+    font-weight: 700;
 }
+
 
 figure-caption p {
     font-size: 1.2em
